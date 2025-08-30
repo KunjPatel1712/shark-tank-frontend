@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Wellcome to our website</h1>
+
+    
+            <h4> id <span id="id"></span></h4>
+            <img src="" id="image">
+            <h4 id="title">Title :</h4>
+            <h4 id="founder">Founder :</h4>
+            <h4 id="category">category :</h4>
+            <h4 id="price">Price :</h4>
+    
+    <script>
+        const param= new URLSearchParams(window.location.search);
+
+        let title=param.get("title")
+        let image=param.get("image")
+        let Price=param.get("price")
+        let founder=param.get("founder")
+        let cat=param.get("category")
+        let id2=param.get("id")
+
+
+        document.getElementById("title").innerText=title;
+        document.getElementById("image").src= image;
+        document.getElementById("price").innerText=Price;
+        document.getElementById("founder").innerText=founder;
+        document.getElementById("category").innerText=cat;
+        document.getElementById("id").innerText=id2;
+
+    </script>
+</body> 
+</html>
+
+
+ 
